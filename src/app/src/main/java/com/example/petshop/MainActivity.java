@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
         pettablePets.add(dog);
         // pettablePets.add(scorpion); // ERROR: Required type 'Pettable', found type 'Scorpion' which does not implement 'Pettable'
 
+        Happy mood1 = new Happy();
+        Sad mood2 = new Sad(new Date(0));
 
+        ArrayList<Mood> moodList = new ArrayList<Mood>();
+        moodList.add(mood1);
+        moodList.add(mood2);
     }
 }
