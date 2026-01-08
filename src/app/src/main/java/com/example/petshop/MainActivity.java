@@ -28,7 +28,15 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Pet> petList = new ArrayList<Pet>();
         petList.add(cat);
         petList.add(dog);
+
         Scorpion scorpion = new Scorpion("Scorponok");
         petList.add(scorpion);
+
+        ArrayList<Pettable> pettablePets = new ArrayList<Pettable>();
+        pettablePets.add(cat);
+        pettablePets.add(dog);
+        // pettablePets.add(scorpion); // ERROR: Required type 'Pettable', found type 'Scorpion' which does not implement 'Pettable'
+
+
     }
 }
